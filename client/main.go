@@ -18,10 +18,10 @@ func main() {
 	}
 
 	client := pb.NewFileServiceClient(conn)
-	//callListFiles(client)
+	callListFiles(client)
 	//callDownload(client)
 	//callUpload(client)
-	callUploadAndNotifyProgress(client)
+	//callUploadAndNotifyProgress(client)
 }
 
 func callListFiles(client pb.FileServiceClient) {
